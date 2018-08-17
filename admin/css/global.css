@@ -1,0 +1,268 @@
+@charset "utf-8";
+/* Global CSS Document */
+
+html {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	margin: 0;
+	background: #eee;
+	font-family: "microsoft yahei";
+	font-size: 14px;
+	color: #333;
+}
+
+ul,ol {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+.position-r {
+	position: relative;
+}
+
+.position-a {
+	position: absolute;
+}
+
+.position-f {
+	position: fixed;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+/* -webkit-内核浏览器默认滚动条样式 */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    border: 1px  solid #d3d3d3;
+    box-shadow: 0px 0px 3px #dfdfdf inset;
+    border-radius: 10px;
+    background: #eee;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 1px  solid #808080;
+    border-radius: 10px;
+    background: #999;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #7d7d7d;
+}
+
+/* waves color */
+.waves-effect.waves-light .waves-ripple {
+  	background-color: rgba(255, 255, 255, 0.45);
+}
+
+.waves-effect.waves-green .waves-ripple {
+	color: #fff;
+ 	background-color: rgba(25, 182, 152, 0.8);
+}
+
+/****************************************
+				nav 
+****************************************/
+nav {
+	height: 60px;
+	background: #19b698;
+	border-bottom: 1px solid #19b698;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 1000;
+	padding: 0 1rem !important;
+}
+
+.toggle-nav-btn {
+	display: block;
+	height: 60px;
+	padding: 0 10px;
+	margin-right: 15px;
+	line-height: 60px;
+}
+
+.toggle-nav-btn i {
+	vertical-align: middle;
+	font-size: 18px;
+	color: #fff;
+	height: auto;
+}
+
+.logo {
+	display: block;
+	height: 60px;
+	line-height: 60px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.logo:hover {
+	color: #fff;
+}
+
+.info-menu {
+	height: 60px;
+}
+
+.info-menu li {
+	float: left;
+	height: 60px;
+	line-height: 60px;
+	padding: 0 10px;
+}
+
+.info-menu li i {
+	font-size: 18px;
+	color: #fff;
+}
+
+.info-menu li i:hover {
+	color: #fff;
+}
+
+.personal-data a img {
+	display: block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: #999;
+	margin: 10px 0;
+}
+
+/****************************************
+			fixed sidebar left 
+****************************************/
+.container-fluid {
+	padding: 80px 20px 0;
+
+}
+
+.fixed-sidebar-left {
+	width: 225px;
+	left: 0;
+	top: 60px;
+	bottom: 0;
+	z-index: 999;
+	margin-left: 0;
+	background: #fff;
+	border-right: #ececec;
+	overflow: hidden;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, .1);
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.wraplist {
+	margin-top: 10px;
+}
+
+.slide-nav-toggle .fixed-sidebar-left {
+    margin-left: -225px;
+}
+
+.fixed-sidebar-left ul {
+
+}
+
+.fixed-sidebar-left > ul > li {
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.fixed-sidebar-left ul li a {
+	display: block;
+	padding: 0 20px;
+	line-height: 42px;
+	color: #666;
+}
+
+ul.sub-menu li a:hover {
+	color: #333;
+	background: rgba(125, 114, 100, .02);
+}
+
+.fixed-sidebar-left ul li a > i {
+	display: inlin-block;
+	width: 18px;
+	height: 18px;
+	margin-right: 20px;
+	color: #19b698;
+	font-size: 18px;
+	text-align: center;
+}
+
+.arrow {
+	display: block;
+	line-height: 42px;
+	font-size: 20px;
+	color: #19b698;
+}
+
+.add-transform-down {
+	-webkit-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+	-webkit-transition: transform 0.3s ease-in-out;
+	-o-transition: transform 0.3s ease-in-out;
+	transition: transform 0.3s ease-in-out;
+}
+
+.add-transform-up {
+	-webkit-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: transform 0.3s ease-in-out;
+	-o-transition: transform 0.3s ease-in-out;
+	transition: transform 0.3s ease-in-out;
+}
+
+.sub-menu {
+	background: #fbf9f5;
+	display: none;
+	border-left: 4px solid #19b698;
+}
+
+.sub-menu li a {
+	padding-left: 20px;
+}
+
+/****************************************
+				main 
+****************************************/
+.page-wrapper {
+	height: 2000px;
+	padding: 10px;
+	margin-left: 225px;
+	margin-bottom: 20px;
+	background: #fff;
+	box-shadow: 0 1px 2px #ccc;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.slide-nav-toggle .page-wrapper {
+	margin-left: 0;
+}

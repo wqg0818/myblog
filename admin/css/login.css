@@ -1,0 +1,121 @@
+html,body {
+	margin: 0;
+	height: 100%;
+}
+
+body {
+	background: url('../images/354623-106.jpg') no-repeat center;
+	background-size: cover;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.animation-canvas {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+#particles-js {
+	position: absolute;
+	top: -100px;
+	width: 100%;
+	height: 100%;
+}
+.login {
+	width: 400px;
+	height: 300px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -200px;
+	margin-top: -150px;
+	padding: 20px;
+	box-sizing: border-box;
+	/* background: #fff; */
+}
+
+.login h3 {
+	text-align: center;
+	color: #fff;
+}
+
+.login label {
+	display: block;
+	width: 100%;
+	height: 44px;
+	border: 1px solid #ddd;
+	border-radius: 22px;
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+
+.login label i {
+	float: left;
+	display: block;
+	width: 44px;
+	height: 44px;
+	text-align: center;
+	line-height: 44px;
+	color: #ddd;
+	font-size: 24px;
+}
+
+.login label input {
+	float: left;
+	height: 45px;
+
+}
+
+input {
+	outline:none; 
+}
+
+.login label input[type="text"],
+.login label input[type="password"] {
+	width: 295px;
+	border: none;
+	background-color: transparent;
+	font-size: 16px;
+	color: #fff;
+}
+
+input[type="submit"] {
+	width: 100%;
+	height: 45px;
+	border-radius: 22px;
+	border: none;
+	background: #0096e6;
+	font-size: 14px;
+	color: #fff;
+	cursor: pointer;
+}
+
+@-webkit-keyframes autofill {
+    to {
+        color: #fff;
+        background: transparent;
+    }
+}
+
+input:-webkit-autofill {
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+}
+
+input::-webkit-input-placeholder {
+    color: #fff;
+}
+input::-moz-placeholder {   /* Mozilla Firefox 19+ */
+    color: #fff;
+}
+input:-moz-placeholder {	/* Mozilla Firefox 4 to 18 */
+    color: #fff;
+}
+input:-ms-input-placeholder {	/* Internet Explorer 10-11 */ 
+    color: #fff;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>首页</title>
+	
+	<link rel="stylesheet" href="../common/bootstrap-4.0.0-dist/css/bootstrap.css">
+	<link rel="stylesheet" href="../common/font-awesome-4.7.0/css/font-awesome.min.css">	
+	<link rel="stylesheet" href="css/basic.css">
+</head>
+<body>
+	<div class="bg"></div>
+	<!-- header start -->
+	<header class="masthead animated from-bottom" id="masthead" itemprop="brand">
+		<div class="decor-part">
+			<div id="particles-js"></div>
+		</div>
+		<div class="animation-header">
+			<div class="decor-wrap">
+				<svg class="decor" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
+					<path class="large left" d="M0 0 L50 50 L0 100" fill="rgba(255,255,255, .1)"></path>
+					<path class="large right" d="M100 0 L50 50 L100 100" fill="rgba(255,255,255, .1)"></path>
+					<path class="medium left" d="M0 100 L50 50 L0 33.3" fill="rgba(255,255,255, .3)"></path>
+					<path class="medium right" d="M100 100 L50 50 L100 33.3" fill="rgba(255,255,255, .3)"></path>
+					<path class="small left" d="M0 100 L50 50 L0 66.6" fill="rgba(255,255,255, .5)"></path>
+					<path class="small right" d="M100 100 L50 50 L100 66.6" fill="rgba(255,255,255, .5)"></path>
+					<path d="M0 99.9 L50 49.9 L100 99.9 L0 99.9" fill="rgba(255,255,255, 1)"></path>
+					<path d="M48 52 L50 49 L52 52 L48 52" fill="rgba(255,255,255, 1)"></path>
+				</svg>
+			</div>
+		</div>
+	</header>
+	<!-- header end -->
+	<!-- main start -->
+	<div class="main">
+		
+	</div>
+	<!-- main end -->
+
+
+	<script src="../common/plug-in/jquery.min.js"></script>
+	<script src="../common/bootstrap-4.0.0-dist/js/bootstrap.js"></script>
+	<!-- 页面滚动隐藏导航 -->
+	<!-- <script src="../common/plug-in/headroom.min.js"></script> -->
+	<!-- 粒子背景 -->
+	<script src="../common/plug-in/particles.js"></script>
+	<!-- 页面滚动元素动画 -->
+	<script src="../common/plug-in/plugins.js"></script>
+	<script src="../common/plug-in/aos.js"></script>
+	<script src="js/main.js">s</script>
+	<script>
+		/*
+		* 描述：判断浏览器信息
+		* 编写：pyuxuan
+		* 日期：2018.4.4
+		* 版本：V1.1
+		*/
+		window.onload = function(){
+			var b_name       = navigator.appName; 
+			var b_version    = navigator.appVersion; 
+			var version      = b_version.split(";"); 
+			var trim_version = version[1].replace(/[ ]/g, ""); 
+			console.log(b_name + " " + b_version + " " + version + " " + trim_version);
+			if (b_name == "Microsoft Internet Explorer") { 
+			//如果是IE9.0以下版本 
+				if (trim_version < "MSIE9.0") { 
+					alert("IE浏览器版本过低，请到指定网站去下载相关版本"); 
+					//然后跳到需要连接的下载网站 
+					window.location.href="http://rj.baidu.com/soft/detail/14744.html?ald"; 
+				}
+			}
+		}
+	</script>
+</body>
+</html>
