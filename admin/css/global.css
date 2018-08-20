@@ -78,7 +78,7 @@ a {
 }
 
 /****************************************
-				nav 
+				nav
 ****************************************/
 nav {
 	height: 60px;
@@ -140,6 +140,10 @@ nav {
 	color: #fff;
 }
 
+.personal-data {
+	position: relative;
+}
+
 .personal-data a img {
 	display: block;
 	width: 40px;
@@ -149,6 +153,25 @@ nav {
 	margin: 10px 0;
 }
 
+.dropdown-menu {
+	width: 200px;
+	height: 200px;
+	border-radius: 5px;
+	background-color: #fff;
+	position: absolute;
+}
+
+.triangle {
+	position: absolute;
+	top: -8px;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 8px solid #fff;
+}
+
+.dropdown-menu .triangle {
+	left: 96px;
+}
 /****************************************
 			fixed sidebar left 
 ****************************************/
